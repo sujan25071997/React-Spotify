@@ -1,0 +1,91 @@
+.home-page{
+  margin-left:19rem;
+  height: 80vh;
+  margin-right: 0.73rem;
+  background-color: black;
+}
+.heading {
+  color: #1ed760;
+  margin-left: 2rem;
+  margin-right: 0px;
+  padding-right: 0px;
+  flex: 1;
+  font-style: normal;
+  font-size: 4rem;
+}
+
+.header-bar {
+  display: grid;
+  grid-template-columns: auto 3rem 7rem;
+  background-color: black;
+  margin-right: -0.74rem;
+}
+.notification-icon {
+  transform: scale(1.8);
+  color: rgb(243, 243, 243);
+  margin: 2.2rem 1rem;
+}
+.top-profile {
+  float: right;
+  margin: 20px 35px;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  flex: 1;
+  order: 0;
+  flex-grow: 0;
+}
+
+.row-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 0rem;
+
+  /* column-gap: 2rem; */
+  gap: 2px;
+  background-color: black;
+}
+
+.playlist-header {
+  margin-top: 2rem;
+  color: rgb(138, 138, 138);
+  margin-left: 26rem;
+}
+.playlist {
+  margin-top: 2rem;
+  margin-left: 26rem;
+  margin-right: 10rem;
+}
+
+.nav-inactive{
+  margin-left: 0rem;
+}
+
+@media screen and (max-width: 900px) {
+  .onlyicon-sidebar {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .mobile{
+    /* width: 130%; */
+    margin-left: 0rem;
+  }
+  .onlyicon-sidebar {
+    margin-left: 0rem;
+  }
+
+  .row-container {
+    padding-left: 3rem;
+
+  }
+  .header-bar {
+    grid-template-columns: auto 2rem 7rem;
+  }
+  
+}

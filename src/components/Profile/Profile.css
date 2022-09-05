@@ -1,0 +1,68 @@
+.profilePage {
+  margin-left: 23rem;
+  margin-right: 0rem;
+  color: white;
+}
+.profile-container {
+  display: grid;
+  margin-top: 5rem;
+  padding-left: 2rem;
+  background-color: black;
+  padding-right: 20rem;
+  margin-right: 2rem;
+
+}
+
+
+.profile-image {
+  margin-top: 1.5rem;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+}
+.display-name {
+  padding-top: 5rem;
+  text-align: center;
+  left: 4rem;
+}
+.display-name h2 {
+    white-space: nowrap;
+}
+  
+.spotify-btn {
+  margin-top: 1.4rem;
+  color: aliceblue;
+  background-color: #1ed760;
+  border-radius: 1.4rem;
+  font-size: 1.3rem;
+  padding-top: 0.5rem;
+  padding-left: 0.8rem;
+  padding-bottom: 0.6rem;
+  white-space: nowrap;
+}
+
+.nav-inactive-profile {
+  margin-left: 15rem;
+}
+
+@media screen and (max-width: 900px) {
+  .onlyicon-sidebar {
+    margin-left: 5rem;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+    .profile-image {
+        height: 14rem;
+        width: 14rem;
+      }
+      .profilePage {
+        margin-top: 2rem;
+      }
+      
+      .onlyicon-sidebar {
+        margin-left: 0rem;
+      }
+
+  }

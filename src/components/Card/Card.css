@@ -1,0 +1,23 @@
+.card {
+    width: 18rem;
+    height: 10rem;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10rem;
+    margin-left: 0rem;
+    
+}
+
+.card-body:hover{
+    background-color: #393939;
+}
+
+.card-body {
+    background-color: #242424;
+}
+.card-img-top {
+    margin-top: 0px;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px #7e7d7d;
+}

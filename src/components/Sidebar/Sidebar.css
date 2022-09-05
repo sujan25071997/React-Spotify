@@ -1,0 +1,152 @@
+/* The side navigation menu */
+.sidebar-wrapper {
+  position: fixed;
+  width: 19rem;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: #1ed760;
+  margin-bottom: 0px;
+}
+
+.spotify-img {
+  margin: 40px 80px;
+  width: 192px;
+  height: 57px;
+}
+
+/* Sidebar links */
+.sidebar-wrapper li {
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 10px 10px 25px;
+  gap: 10px;
+  width: 19rem;
+  height: 52px;
+  border-radius: 0px 25px 25px 0px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  font: 20px Raleway, sans-serif;
+  text-decoration: none;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 62vh;
+}
+
+.sidebar-wrapper ul li p {
+  margin-top: 1.2rem;
+}
+
+.logout {
+  right: 100px;
+}
+
+.sidebar-wrapper ul li:hover {
+  background-color: rgb(255, 255, 255);
+  color: #1ed760;
+}
+.sidebar-wrapper ul li:hover a {
+  color: #1ed760;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 900px) {
+  /* sidebar visible */
+  .sidebar-wrapper {
+    width: 5rem;
+  }
+  .spotify-img {
+    margin: 2rem 0.5rem;
+    width: 4rem;
+    height: 1.5rem;
+  }
+  .sidebar-wrapper li {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* padding: 10px 10px 10px 25px; */
+    /* gap: 10px; */
+
+    width: 5rem;
+    height: 3rem;
+
+    background: #1ed760;
+    border-radius: 0px 25px 25px 0px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    font: 20px Raleway, sans-serif;
+    text-decoration: none;
+  }
+  .sidebar-wrapper li p {
+    display: none;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar-wrapper {
+    position: fixed;
+    width: 10rem;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #1ed760;
+    z-index: 1;
+  }
+  .mobile {
+    width: 130%;
+  }
+  .sidebar-wrapper li p {
+    display: inline;
+  }
+  .sidebar-wrapper li {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 10rem;
+    height: 3rem;
+
+    background: #1ed760;
+    border-radius: 0px 25px 25px 0px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    font: 20px Raleway, sans-serif;
+    text-decoration: none;
+  }
+}
+
+.active ul {
+  background-color: #1ed760;
+}
+.active li {
+  background-color: #ffffff;
+  color: #1ed760;
+}
+.active li p {
+  color: #1ed760;
+}
