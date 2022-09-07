@@ -37,8 +37,8 @@ const HomePage = (props) => {
   }, []);
 
   const listItems = playlistItems.map((item) => (
-    <div className=" playlist-card col-md col-fs">
-      <Card key={item.id.toString()} value={item} />
+    <div className="playlist-card col-md col-fs">
+      <Card key={item.id} value={item} />
     </div>
   ));
 
@@ -51,7 +51,7 @@ const HomePage = (props) => {
           <p className="heading">Good Evening!</p>
         </div>
         <div className="notification-area">
-          <Notifications className="notification-icon" toggle={toggle} />
+          <a href="#"><Notifications className="notification-icon" /></a>
         </div>
         <div className="top-profile-div">
           <img

@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 import { CLICKED_SONG, PLAYLIST } from "../../actions";
 import Player from "../Player/Player";
 
-console.log(store.getState());
+// console.log(store.getState());
 
 const Tracks = (props) => {
   const [tracks, setTracks] = useState([]);
@@ -41,7 +41,6 @@ const Tracks = (props) => {
   });
 
   const onSongClick = (event) => {
-    console.log("song", event.track.album.name);
     dispatch({
       type: CLICKED_SONG,
       payload: event,
@@ -51,7 +50,7 @@ const Tracks = (props) => {
   const trackListItems = tracks.map((item) => (
     <div>
       <div className="">
-        <a href="#" onClick={onSongClick(item)} className="track-link">
+        <a href="#" onClick={() => onSongClick(item)} className="track-link">
           <div className="playlist-row row">
             <div className="playlist-item col-2">
               <img
@@ -60,7 +59,7 @@ const Tracks = (props) => {
                 alt=""
               />
             </div>
-            <div className="playlist-item col-3">{item.track.album.name}</div>
+            <div className="playlist-item col-3">{item.track.name}</div>
             <div className="playlist-item col-4">
               {item.track.album.artists[0].name}
             </div>

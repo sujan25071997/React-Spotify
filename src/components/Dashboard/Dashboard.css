@@ -7,7 +7,7 @@
   background: #000000;
 }
 
-.navbar{
+.navbar {
   margin-left: 19rem;
   background-color: black;
 }
@@ -23,8 +23,11 @@
   background: #1ed760;
   position: fixed;
   margin-top: 1.3rem;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
-.nav-inactive{
+.nav-inactive {
   margin-left: 0;
 }
 
@@ -35,17 +38,15 @@
 }
 
 @media screen and (max-width: 400px) {
-  .mobile-dashbord{
-
+  .mobile-dashbord {
   }
   .dashboard {
     overflow-x: scroll;
   }
-  .nav-inactive{
+  .nav-inactive {
     margin-left: 0rem;
   }
-  .navbar{
+  .navbar {
     margin-left: 0rem;
   }
-  
 }
